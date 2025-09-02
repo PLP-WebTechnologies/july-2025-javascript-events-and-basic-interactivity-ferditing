@@ -1,0 +1,91 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #0078d7;
+  color: #fff;
+  cursor: pointer;
+}
+
+#messageArea {
+  margin-top: 1rem;
+  color: #0078d7;
+  min-height: 1.5em;
+  font-weight: bold;
+}
+
+/* Theme toggle styles */
+body.dark {
+  background: #222;
+  color: #f4f4f4;
+}
+
+body.dark section {
+  background: #333;
+}
+
+body.dark button {
+  background: #444;
+}
+
+body.dark #messageArea {
+  color: #ffd700;
+}
+
+/* Form styles */
+form.signUpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.2rem;
+}
+
+input:focus {
+  border-color: #0078d7;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.9em;
+  min-height: 1em;
+}
+
+.formSuccess {
+  color: #388e3c;
+  text-align: center;
+  margin-top: 1em;
+}

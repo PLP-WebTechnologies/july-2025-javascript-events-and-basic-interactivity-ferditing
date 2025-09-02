@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form Validation and Interactive Web Content Assignment</h1>
+    <!-- 1. Event Handling -->
+    <button id="messageBtn">Click Here for a message</button>
+    <p id="messageArea"></p>
+
+    <!-- 2. Interactive Elements -->
+     <section>
+        <h2>Toggle Light/Darkmode</h2>
+        <button id="toggleTheme">Toggle Theme</button>
+     </section>
+     <!-- 3. Form Validation -->
+      <section>
+        <h2>Sign Up Form</h2>
+        <form action="" id="signUpForm" novalidate>
+            <label >
+                Name:<input type="text" id="name" required>
+            </label>
+            <small class="error" id="nameError"></small>
+            <br>
+            <label >
+                Email:<input type="email" id="email" required>
+            </label>
+            <small class="error" id="emailError"></small>
+            <br>
+            <label >
+                Password:<input type="password" id="password" required>
+            </label>
+            <small class="error" id="passwordError"></small>
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="formSuccess"></p>
+      </section>
+    <script src="script.js"></script>
+</body>
+</html>
